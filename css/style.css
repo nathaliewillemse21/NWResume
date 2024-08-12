@@ -45,8 +45,8 @@ footer {
   }
 }
 
-
-/* Base styles for navigation links */
+/* Navbar Toggle */
+/* Navbar link styling */
 .navbar-nav .nav-link {
   color: #000; /* Black text color */
   font-family: 'Anton', sans-serif; /* Font family */
@@ -71,6 +71,9 @@ footer {
     border: none; /* Remove border for cleaner look */
   }
 
+  .navbar-toggler-icon {
+    background: linear-gradient(135deg, #e1e1ea, #99d6ea);
+  }
 }
 
 /* Navbar */
