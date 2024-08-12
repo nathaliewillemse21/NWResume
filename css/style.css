@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, "Anton";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
@@ -10,10 +10,12 @@ header, nav {
 h1, h2 {
   font-weight: bold;
 }
-h3{
-  display:flex;
+
+h3 {
+  display: flex;
   justify-content: center;
 }
+
 .card {
   margin-bottom: 20px;
 }
@@ -29,46 +31,40 @@ footer {
 }
 
 /* Paragraphs */
-/* CSS for handling overflow and scrolling */
 .scroll-container {
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 100vh; /* Set maximum height to viewport height */
-  padding: 10px; /* Optional padding */
-  box-sizing: border-box; /* Include padding in height calculation */
+  overflow-y: auto;
+  max-height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Media queries for mobile devices */
 @media (max-width: 767px) {
   .scroll-container {
-    padding: 15px; /* Increase padding if needed */
-    max-height: 200px; /* Adjust height to fit mobile screens */
+    padding: 15px;
+    max-height: 50vh;
   }
 }
 
-/* Navbar Toggle */
-/* Navbar link styling */
 .navbar-nav .nav-link {
-  color: #000; /* Black text color */
-  font-family: 'Anton', sans-serif; /* Font family */
-  font-size: 16px; /* Base font size */
-  padding: 10px 15px; /* Base padding for spacing */
-  text-decoration: none; /* Remove underline */
+  color: #000;
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
-/* Hover effect */
 .navbar-nav .nav-link:hover {
-  color: #555; /* Change color on hover */
+  color: #555;
 }
 
-/* Media queries for mobile devices */
 @media (max-width: 767px) {
   .navbar-nav .nav-link {
-    font-size: 14px; /* Smaller font size for mobile */
-    padding: 8px 12px; /* Adjust padding for better touch target */
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .navbar-toggler {
-    border: none; /* Remove border for cleaner look */
+    border: none;
   }
 
   .navbar-toggler-icon {
@@ -76,16 +72,9 @@ footer {
   }
 }
 
-/* Navbar */
 .animate {
   font-family: 'Anton';
-  background-image: linear-gradient(-225deg,
-      #e8c5ec 0%,
-      #1c15e9 29%,
-      #58bdec 67%,
-      #8985f0 100%);
-  background-size: auto auto;
-  background-clip: border-box;
+  background-image: linear-gradient(-225deg, #e8c5ec 0%, #1c15e9 29%, #58bdec 67%, #8985f0 100%);
   background-size: 200% auto;
   color: #f3eded;
   background-clip: text;
@@ -99,13 +88,10 @@ footer {
   0% {
     background-position: 100% 0;
   }
-
   100% {
     background-position: -100% 0;
   }
 }
-
-/* About Section */
 
 .circular-image {
   border-radius: 100%;
@@ -124,7 +110,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* Experiences and Education */
 .timeline {
   display: flex;
   overflow-x: auto;
@@ -157,42 +142,39 @@ footer {
   max-width: 100%;
   overflow-x: auto;
 }
-/* Bagdes */
+
 .badge-section {
   margin-bottom: 40px;
-  text-align: center; /* Center the content within each section */
+  text-align: center;
 }
 
 .badge-section img {
-  width: 100px; /* Set the image width to 50px */
-  height: 100px; /* Set the image height to 50px */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 8px;
-  display: block; /* Ensure that images are displayed as block elements */
-  margin: 0 auto; /* Center the images horizontally */
+  display: block;
+  margin: 0 auto;
 }
+/* Projects */
 
-/* Ensure rows and columns align properly */
 .row-cols-md-3 .col,
 .row-cols-md-2 .col,
 .row-cols-md-4 .col {
   display: flex;
-  justify-content: center; /* Center the column content */
+  justify-content: center;
 }
 
-/* Projects */
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
   margin: 20px;
+  max-width: 300px;
 }
-section{
-  margin-left: 20px;
 
-}
 .flip-card-inner {
   position: relative;
-  width: 200px;
+  width: 100%;
   height: 200px;
   text-align: center;
   transition: transform 0.6s;
@@ -206,8 +188,8 @@ section{
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-   width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
 }
@@ -237,75 +219,138 @@ section{
 .flip-card p {
   padding: 0 10px;
 }
-/* General styling for the flip-card container */
-.flip-card {
-  margin: 20px; /* Margin between cards */
-}
 
-/* Flip card styles */
-.flip-card-inner {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  backface-visibility: hidden;
-}
-
-/* Centering and responsive adjustments */
 @media (min-width: 576px) {
   .flip-card {
-      /* Larger screens: 2 cards per row */
-      max-width: 100%;
+      max-width: 300px;
   }
 }
 
 @media (min-width: 768px) {
   .flip-card {
-      /* Medium screens: 3 cards per row */
-      max-width: 100%;
+      max-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
   .flip-card {
-      /* Larger screens: 3 cards per row */
-      max-width: 100%;
+      max-width: 300px;
   }
 }
 
-/* Centering cards within the row */
 @media (max-width: 575.98px) {
   .row {
       justify-content: center;
   }
 
   .flip-card {
-      max-width: 100%; /* Ensure cards fit within the container */
+      max-width: 100%;
   }
 }
-
-
-/* Reviews */
-
-
 /* Footer */
 .footer {
   background: linear-gradient(135deg, #e1e1ea, #99d6ea);
   color: rgb(14, 11, 11);
   padding: 20px 0;
 }
+
 .footer .text {
   margin: 0;
 }
+
 .footer .icons svg {
-  fill: rgb(12, 11, 11);
+  fill: #000; /* Adjusted for better visibility */
 }
+
 .footer .icons a {
   color: rgb(240, 235, 235);
   margin: 0 10px;
+}
+
+/* Reviews */
+/* Container for the slideshow */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+  background: #fff; /* Card background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Space inside the card */
+  margin: 20px 0; /* Space around the card */
+  text-align: center; /* Center text and content */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for testimonial card */
+.testimonial-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Testimonial image */
+.testimonial img {
+  border-radius: 50%; /* Circular profile picture */
+  width: 200px; /* Size of the profile picture */
+  height: 200px; /* Size of the profile picture */
+  object-fit: cover; /* Ensure image covers the area */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+/* Name styling */
+.testimonial h3 {
+  margin: 0 0 10px; /* Space below the name */
+  font-size: 1.2em; /* Font size for the name */
+  color: #333; /* Color for the name */
+}
+
+/* Content styling */
+.testimonial p {
+  font-size: 1em; /* Font size for the quote */
+  color: #666; /* Color for the quote */
+  font-style: italic; /* Italicize the quote */
+  margin: 0; /* Remove default margin */
+}
+
+/* Navigation buttons */
+.prev, .next {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  border-radius: 0 3px 3px 0;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #bbb;
+}
+
+/* Position navigation buttons */
+.slideshow-container .prev {
+  left: 0;
+}
+
+.slideshow-container .next {
+  right: 0;
 }

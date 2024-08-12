@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
@@ -28,7 +27,7 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Reviews">Reviews</a>
+                        <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +45,7 @@
 
     <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 class="text-center mb-4">About Me</h2>
             <div class="scroll-container">
                 <p>As an IT enthusiast driven by learning and innovation, I recently completed a 6-
                     month course in HTML, CSS, and JavaScript, honing my technical skills while fueling
@@ -57,17 +56,16 @@
                     others. I seek opportunities for self-challenge, growth, and innovation through
                     collective efforts.</p>
             </div>
-
             <div class="circular-image d-flex justify-content-center">
                 <img src="https://i.ibb.co/0QMT5Bq/IMG-20231010-WA0046.jpg" loading="lazy"
-                    class="img-fluid float-start " loading="lazy" alt="about" />
+                    class="img-fluid float-start " loading="lazy" alt="Portrait of Nathalie Willemse" />
             </div>
         </div>
     </section>
 
     <section id="experience" class="py-5">
         <div class="container">
-            <h2>My Experiences & Education</h2>
+            <h2 class="text-center mb-4">Education and Experiences</h2>
             <div class="scroll-container">
                 <p> After matriculating from Forest Heights High School in 2019, I pursued computer literacy
                     training at Eerste River Computers from 2020-2022, laying a solid foundation in various
@@ -247,7 +245,7 @@
 
     <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 class="text-center mb-4">Projects</h2>
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-sm-6 col-md-4 flip-card">
@@ -354,57 +352,36 @@
 
     <section id="Reviews" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Reviews</h2>
-
-
-            <!-- <div id="carouselExampleControls" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="https://i.ibb.co/KzspVpN/Screenshot-2024-04-04-100009.png" loading="lazy"
-                                alt="Taryn-Lee Walbrugh">
-                            <h3>Taryn-Lee Walbrugh</h3>
-                            <p>Nathalie has helped me in more ways than one, she's always lending a helping hand whether
-                                it be with coding or in everyday life. Nathalie is truly an amazing person who has shown
-                                me that being who you are and sticking by your values really benefits you in the long
-                                run.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="https://i.ibb.co/sJBMq7J/20240110-140911-4.jpg" loading="lazy"
-                                alt="Veronique Nappie">
-                            <h3>Veronique Nappie</h3>
-                            <p>Nathalie has an incredible energy and is very hardworking. She is diligent when it comes
-                                to her work and puts in a lot of effort to broaden her knowledge. She is a team player
-                                and always willing to help her peers in whatever capacity is required of her. I see her
-                                being a great contributor to any team she is a part of and know that she will achieve
-                                great things.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="https://i.ibb.co/HgdyLSD/joel2.jpg" loading="lazy" alt="Joel Mukanya">
-                            <h3>Joel Mukanya</h3>
-                            <p>Nathalie is a creative, and well-behaved individual who always prioritizes her work. She
-                                excels in collaborating with others and has gained proficiency in HTML5, CSS, and
-                                Bootstrap. Including Git and GitHub.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
+          <h2 class="text-center mb-4">Reviews</h2>
+          <div class="slideshow-container" id="slideshow-container">
+            <!-- Testimonial Slide 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial">
+                <img src="https://i.ibb.co/sJBMq7J/20240110-140911-4.jpg" loading="lazy" alt="Veronique Nappie">
+                <h3>Veronique Nappie</h3>
+                <p>Nathalie has an incredible energy and is very hardworking. She is diligent when it comes to her work and puts in a lot of effort to broaden her knowledge. She is a team player and always willing to help her peers in whatever capacity is required of her. I see her being a great contributor to any team she is a part of and know that she will achieve great things.</p>
+              </div>
+            </div>
+            <!-- Testimonial Slide 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial">
+                <img src="https://i.ibb.co/KzspVpN/Screenshot-2024-04-04-100009.png" loading="lazy" alt="Taryn-Lee Walbrugh">
+                <h3>Taryn-Lee Walbrugh</h3>
+                <p>Nathalie has helped me in more ways than one, she's always lending a helping hand whether it be with coding or in everyday life. Nathalie is truly an amazing person who has shown me that being who you are and sticking by your values really benefits you in the long run.</p>
+              </div>
+            </div>
+            <!-- Testimonial Slide 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial">
+                <img src="https://i.ibb.co/HgdyLSD/joel2.jpg" loading="lazy" alt="Joel Mukanya">
+                <h3>Joel Mukanya</h3>
+                <p>Nathalie is a creative, and well-behaved individual who always prioritizes her work. She excels in collaborating with others and has gained proficiency in HTML5, CSS, and Bootstrap. Including Git and GitHub.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
