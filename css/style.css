@@ -1,9 +1,9 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, "Anton";
   color: #333;
 }
 
-header {
+header, nav {
   background: linear-gradient(135deg, #e1e1ea, #99d6ea);
 }
 
@@ -28,6 +28,50 @@ footer {
   color: #fff;
 }
 
+/* Paragraphs */
+/* CSS for handling overflow and scrolling */
+.scroll-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Set maximum height to viewport height */
+  padding: 10px; /* Optional padding */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 767px) {
+  .scroll-container {
+    padding: 15px; /* Increase padding if needed */
+    max-height: 200px; /* Adjust height to fit mobile screens */
+  }
+}
+
+
+/* Base styles for navigation links */
+.navbar-nav .nav-link {
+  color: #000; /* Black text color */
+  font-family: 'Anton', sans-serif; /* Font family */
+  font-size: 16px; /* Base font size */
+  padding: 10px 15px; /* Base padding for spacing */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #555; /* Change color on hover */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 12px; /* Adjust padding for better touch target */
+  }
+
+  .navbar-toggler {
+    border: none; /* Remove border for cleaner look */
+  }
+
+}
 
 /* Navbar */
 .animate {
@@ -139,7 +183,10 @@ footer {
   perspective: 1000px;
   margin: 20px;
 }
+section{
+  margin-left: 20px;
 
+}
 .flip-card-inner {
   position: relative;
   width: 200px;
@@ -185,23 +232,62 @@ footer {
 }
 
 .flip-card p {
-  padding: 0 20px;
+  padding: 0 10px;
+}
+/* General styling for the flip-card container */
+.flip-card {
+  margin: 20px; /* Margin between cards */
+}
+
+/* Flip card styles */
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+}
+
+/* Centering and responsive adjustments */
+@media (min-width: 576px) {
+  .flip-card {
+      /* Larger screens: 2 cards per row */
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .flip-card {
+      /* Medium screens: 3 cards per row */
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .flip-card {
+      /* Larger screens: 3 cards per row */
+      max-width: 100%;
+  }
+}
+
+/* Centering cards within the row */
+@media (max-width: 575.98px) {
+  .row {
+      justify-content: center;
+  }
+
+  .flip-card {
+      max-width: 100%; /* Ensure cards fit within the container */
+  }
 }
 
 
 /* Reviews */
-.carousel-item img {
-  border-radius: 50%;
-  max-width: 100px;
-  height: auto;
-}
-.carousel-item h3 {
-  margin-top: 10px;
-}
-.carousel-item p {
-  font-size: 16px;
-  color: #666;
-}
 
 
 /* Footer */
@@ -214,9 +300,9 @@ footer {
   margin: 0;
 }
 .footer .icons svg {
-  fill: white;
+  fill: rgb(12, 11, 11);
 }
 .footer .icons a {
-  color: white;
+  color: rgb(240, 235, 235);
   margin: 0 10px;
 }
